@@ -1,0 +1,392 @@
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Rubik', sans-serif;
+	height: 100vh;
+}
+
+body::before {
+	content: '';
+	background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-radius: 0 0 200px 200px;
+	display: block;
+	position: absolute;
+	top: -150px;
+	left: -50px;
+	height: 750px;
+	width: 400px;
+	z-index: -1;
+}
+
+main {
+	display: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.iphone {
+	width: 300px;
+	border-radius: 30px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	margin: 50px 100px;
+	background-color: white;
+}
+
+.screen-phone {
+	background-color: hsl(270, 20%, 96%);
+	width: 95%;
+	margin: 5px auto;
+	border-radius: 30px;
+}
+
+
+.contact {
+	
+	background: linear-gradient(90deg,hsl(264, 100%, 61%) 0%, hsl(293, 100%, 63%)  100%);
+	width: 100%;
+	height: 5rem;
+	margin: 10px auto;
+	border-radius: 30px 30px 10px 10px;
+	position: relative;
+}
+
+.contact::before {
+	content: "";
+	width: 55%;
+	background-color: white;
+	height: 1.8rem;
+	border-radius: 100px;
+	position: absolute;
+	left: 65px;
+	top: -5px;
+
+}
+
+.samuel-green {
+	display: flex;
+	align-items: center;
+}
+
+.samuel-green::before {
+	content: "<";
+	position: absolute;
+	color: white;
+	font-size: 20px;
+	top: 40px;
+	left: 10px;
+}
+
+
+.contact img {
+	width: 25px;
+	height: 25px;
+	border: 1px solid white;
+	border-radius: 100px;
+	margin-left: 30px;
+	margin-top: 40px;
+	position: relative;
+}
+
+.samuel h2{
+	font-size: 0.7em;
+	margin: 0 0;
+	color: white;
+	margin-left: 10px;
+	margin-top: 40px;
+	color: hsl(0, 0%, 100%);
+}
+
+.samuel p {
+	color: hsl(276, 100%, 81%);
+	margin: 0px 0;
+	font-size: 0.6em;
+	margin-left: 10px;
+}
+
+.three-points {
+	width: 2px;
+	height: 2px;
+	background-color: white;
+	border-radius: 100px;
+	margin-left: 80px;
+	margin-top: 40px;
+	position: relative;
+	right: -30px;
+}
+
+.three-points::before, .three-points::after {
+	width: 2px;
+	height: 2px;
+	border-radius: 100px;
+	background-color: white;
+	content: "";
+	position: absolute;
+}
+
+.three-points::before {
+	top: -5px;
+}
+
+.three-points::after {
+	top: 5px;
+}
+
+.message {
+	display: grid;
+	width: 100%;
+	height: 65vh;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: repeat(9, 1fr);
+	grid-gap: 5px;
+
+}
+
+.message1 {
+	background-color: #ede5f4;
+	width: 100%;
+	padding: 0px 10px;
+	border-radius: 10px 10px 10px 5px;
+	margin: 0px 10px;
+	font-size: 0.6em;
+	color: hsl(276, 55%, 52%);
+	grid-column: 1 / span 1;
+	grid-row: 1 / span 1;
+	font-weight: 400;
+}
+
+.message2 {
+	background-color: #ede5f4;
+	width: 100%;
+	padding: 0px 10px;
+	border-radius: 10px 10px 10px 5px;
+	margin: 0px 10px;
+	font-size: 0.6em;
+	color: hsl(276, 55%, 52%);
+	grid-column: 1 / span 1;
+	grid-row: 2 / span 1;
+}
+
+
+.message3 {
+	grid-column: 2 / span 1;
+	grid-row: 3 / span 1;
+	width: 100%;
+}
+
+.dog-pics {
+	display: flex;
+}
+
+.message3 img {
+	width: 30px;
+	height: 30px;
+	border-radius: 10px;
+	margin: 10px 5px;
+}
+
+.message4 {
+	background-color: white;
+	width: 80%;
+	padding: 0px 10px;
+	border-radius: 10px 10px 5px 10px;
+	margin: 0px 10px 0px 0;
+	font-size: 0.6em;
+	color: hsl(271, 15%, 43%);
+	grid-column: 2 / span 1;
+	grid-row: 4 / span 1;
+}
+
+.message5 {
+	background-color: white;
+	width: 60%;
+	padding: 0px 10px;
+	border-radius: 10px 10px 5px 10px;
+	margin: 0px 10px;
+	font-size: 0.6em;
+	color: hsl(271, 15%, 43%);
+	grid-column: 2 / span 1;
+	grid-row: 5 / span 1;
+}
+
+.message6 {
+	background-color: #ede5f4;
+	width: 100%;
+	padding: 0px 10px;
+	border-radius: 10px 10px 10px 5px;
+	margin: 0px 10px;
+	font-size: 0.6em;
+	color: hsl(276, 55%, 52%);
+	grid-column: 1 / span 1;
+	grid-row: 6 / span 1;
+}
+
+.message7 {
+	background: linear-gradient(90deg,hsl(293, 100%, 63%) 0%,hsl(264, 100%, 61%) 100%);
+	display: flex;
+	align-items: center;
+	grid-column: 1 / span 1;
+	grid-row: 7 / span 1;
+	padding: 0px 20px;
+	margin: 0px 10px;
+	border-radius: 10px 10px 10px 5px;
+	width: 100%;
+}
+
+.message8 {
+	background: linear-gradient(90deg,hsl(293, 100%, 63%) 0%,hsl(264, 100%, 61%) 100%);
+	display: flex;
+	align-items: center;
+	grid-column: 1 / span 1;
+	grid-row: 8 / span 1;
+	padding: 0px 20px;
+	margin: 0px 10px;
+	border-radius: 10px 10px 10px 5px;
+	width: 100%;
+}
+
+.price1 {
+	color: white;
+	font-size: 0.9em;
+	font-weight: 500;
+	margin-left: 20px;
+}
+
+.price2 {
+	color: white;
+	font-size: 0.9em;
+	font-weight: 500;
+	margin-left: 37px;
+}
+
+.price1-text, .price2-text {
+	color: hsl(289, 100%, 72%);
+	font-weight: 500;
+	margin-left: 10px;
+	font-size: 0.5em;
+}
+
+.circle {
+	background-color: transparent;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	border: 1px solid hsl(289, 100%, 72%);
+}
+
+.message9 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 70%;
+	margin: 10px auto;
+	background-color: white;
+	border-radius: 100px;
+	padding: 0px 30px;
+	color: hsl(206, 6%, 79%);
+	grid-column: 1 / span 2;
+	grid-row: 9 / span 1;
+	font-size: 0.6em;
+}
+
+.icon2 {
+	background-color: hsl(271, 36%, 24%);
+	border-radius: 100px;
+}
+
+.message9 i {
+	rotate: 180deg;
+	color: white;
+	padding: 8px 9px;
+	font-size: 10px;
+}
+
+.booking {
+	width: 40%;
+}
+
+.booking h2 {
+	margin: 20px 60px;
+	font-size: 2.5em;
+	font-weight: 500;
+	color: hsl(271, 36%, 24%);
+}
+
+.booking p {
+	margin: 0 60px;
+	text-align: left;
+	line-height: 1.5em;
+	color: hsl(270, 7%, 64%);
+
+}
+
+
+
+
+
+/* FOOTER  */
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+  }
+
+  .attribution a {
+	color: hsl(228, 45%, 44%);
+  }
+
+
+
+/*MEDIA QUERIES */
+
+@media screen and (max-width: 600px) {
+
+
+
+main {
+	flex-direction: column;
+}
+
+body::before {
+	content: '';
+	background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-radius: 0 0 200px 200px;
+	display: block;
+	position: absolute;
+	top: -250px;
+	left: -150px;
+	height: 750px;
+	width: 400px;
+	z-index: -1;
+}
+
+.iphone {
+	width: 300px;
+	margin: 20px auto;
+}
+
+.booking {
+	width: 90%;
+}
+
+.booking h2 {
+	margin: 20px 10px;
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: 500;
+}
+
+.booking p {
+	margin: 20px 20px;
+	text-align: center;
+	line-height: 1.8em;
+	font-weight: 400;
+}
+
+}
+
